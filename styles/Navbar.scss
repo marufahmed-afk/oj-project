@@ -1,0 +1,247 @@
+$nav-bg: #f8faff;
+$nav-blue-txt: #2b64be;
+
+.active-menu {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.active {
+  display: block !important;
+}
+
+.nav-large {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+
+  .ham {
+    z-index: 21;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    background-color: $nav-bg;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .brand-logo {
+    border-bottom: 1px solid #bdbdbd;
+    text-align: center;
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background: white;
+    width: 100%;
+    height: 100vh;
+
+    .expandable {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .menu-1 {
+      margin-top: 5em;
+      overflow: scroll;
+      width: 80%;
+
+      & > li {
+        margin-bottom: 3em;
+      }
+
+      & > li:last-child {
+        color: $nav-blue-txt;
+      }
+
+      .expand-icon {
+        margin-left: 0em;
+      }
+    }
+
+    .menu-2 {
+      display: none;
+    }
+
+    .menu-3 {
+      display: none;
+      li {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+.search {
+  display: none;
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  z-index: 22;
+  .search-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #afafaf;
+
+    img:first-of-type {
+      width: 30px;
+    }
+
+    input[type='text'] {
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      width: 80%;
+    }
+  }
+  .new {
+    color: red;
+  }
+
+  .search-categories {
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      & > li:first-child {
+        font-weight: 500;
+      }
+
+      li {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    .nav-items {
+      display: flex;
+      justify-content: flex-end;
+      background-color: $nav-bg;
+      padding: 10px;
+
+      div:not(:nth-child(3)) {
+        margin-right: 1.3em;
+      }
+
+      .ham {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+      }
+    }
+
+    .brand-logo {
+      border-bottom: 1px solid #bdbdbd;
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .hide-desktop {
+    display: none;
+  }
+
+  .show-desktop {
+    display: flex !important;
+  }
+
+  .search-icon {
+    flex: 1;
+  }
+
+  .nav-large {
+    display: flex;
+
+    p {
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+  }
+
+  .right-nav {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .desktop-menu {
+    display: flex !important;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 2rem;
+    position: relative;
+  }
+
+  .menu {
+    display: flex;
+    position: static !important;
+    top: 0;
+    z-index: 20;
+    background: transparent !important;
+    width: auto !important;
+    height: 100vh;
+
+    .expandable {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu-1 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1em !important;
+      overflow: auto !important;
+      width: 95% !important;
+
+      & > li {
+        margin-bottom: 3em;
+        margin-right: 1.3em;
+      }
+
+      & > li:last-child {
+        color: $nav-blue-txt;
+      }
+
+      .expand-icon {
+        display: none;
+      }
+    }
+
+    .menu-2 {
+      position: absolute;
+      top: 4em;
+      left: 0;
+      background: white;
+      width: 100%;
+
+      & > ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+
+    .menu-3 {
+      display: block !important;
+
+      padding-left: 0;
+      li {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

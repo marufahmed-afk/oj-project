@@ -1,0 +1,57 @@
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.popular,
+.subscribe,
+.story {
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  h1 {
+    font-size: 4.3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}

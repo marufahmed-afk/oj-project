@@ -49,10 +49,15 @@ nav {
       justify-content: space-between;
       cursor: pointer;
     }
+    .menu-1::-webkit-scrollbar {
+      display: none;
+    }
 
     .menu-1 {
       margin-top: 5em;
       overflow: scroll;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
       width: 80%;
 
       & > li {

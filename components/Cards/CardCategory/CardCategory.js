@@ -1,7 +1,7 @@
-import '../../styles/CardCategory.scss';
+import './CardCategory.scss';
 import React, { useState } from 'react';
 
-import CategoryMenu from './CategoryMenu';
+import CategoryMenu from '../CategoryMenu';
 
 function CardCategory() {
   const [toggleFilter, setToggleFilter] = useState(false);

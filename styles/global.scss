@@ -75,5 +75,15 @@ ul {
   font-weight: 500;
 }
 
+@media only screen and (min-width: 768px) {
+  .show-tablet {
+    display: flex !important;
+  }
+}
 @media only screen and (min-width: 1920px) {
+  .btn-black {
+    font-size: 1.2rem;
+    color: white;
+    background: black;
+  }
 }

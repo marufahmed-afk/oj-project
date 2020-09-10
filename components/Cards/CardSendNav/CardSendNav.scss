@@ -1,0 +1,13 @@
+.send-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #afafaf;
+
+  .send-controls {
+    img:not(:last-child) {
+      margin-right: 0.8rem;
+    }
+  }
+}

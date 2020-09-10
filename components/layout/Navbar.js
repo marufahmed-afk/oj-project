@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../../styles/Navbar.scss';
+import Link from 'next/link';
+import './Navbar.scss';
 import Menu from './Menu';
 
 const Navbar = () => {
@@ -40,9 +41,11 @@ const Navbar = () => {
         </div>
       </div>
       <div className='desktop-menu'>
-        <div className='brand-logo'>
-          <img src='/assets/Ojolie_Novel_Logo.png' alt='' />
-        </div>
+        <Link href='/'>
+          <div className='brand-logo'>
+            <img src='/assets/Ojolie_Novel_Logo.png' alt='' />
+          </div>
+        </Link>
 
         <Menu setToggleMenu={setToggleMenu} toggleMenu={toggleMenu} />
       </div>

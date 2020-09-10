@@ -1,4 +1,5 @@
-import '../../styles/Homepage.scss';
+import Link from 'next/link';
+import './Homepage.scss';
 
 import Footer from '../layout/Footer';
 
@@ -73,7 +74,9 @@ function Homepage() {
           <img src='/assets/images/card-6.svg' alt='' />
         </div>
       </div>
-      <button className='btn'>BROWSE ALL</button>
+      <Link href='/card-category'>
+        <button className='btn'>BROWSE ALL</button>
+      </Link>
       <section className='get-started wrapper'>
         <div className='info'>
           <h1> Ready to get started?</h1>
@@ -91,7 +94,9 @@ function Homepage() {
           <img src='/assets/images/popular.svg' alt='' />
           <img src='/assets/images/popular.svg' alt='' />
         </div>
-        <button className='btn'>BROWSE ALL</button>
+        <Link href='/card-category'>
+          <button className='btn'>BROWSE ALL</button>
+        </Link>
       </section>
       <section className='subscribe wrapper'>
         <div className='sub-flex'>

@@ -9,7 +9,7 @@ const CardSendReview = () => {
         <p>POPULAR ECARDS</p>
       </div>
       <div className='card-send-review container'>
-        <div className='share card'>
+        <div className='share card-share'>
           <h2>Share</h2>
           <div className='share-options'>
             <div className='share-icon'>
@@ -38,7 +38,7 @@ const CardSendReview = () => {
             </div>
           </div>
         </div>
-        <div className='premium-card card'>
+        <div className='premium-card card-share'>
           <div className='premium-title'>
             <img src='/assets/diamond.svg' alt='' />
             <h3>Premium Card</h3>
@@ -51,7 +51,7 @@ const CardSendReview = () => {
           </div>
         </div>
 
-        <div className='card-img card'>
+        <div className='card-img card-share'>
           <img src='/assets/images/hero.svg' alt='' />
         </div>
       </div>

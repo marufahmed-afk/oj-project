@@ -8,8 +8,20 @@ const CardSendNav = () => {
       </div>
       <div className='send-controls'>
         <img src='/assets/cards/arrows/back-arrow.png' alt='' />
-        <img src='/assets/cards/icon/save-normal.png' alt='' />
-        <img src='/assets/cards/arrows/next-arrow.png' alt='' />
+
+        <img
+          src='/assets/cards/icon/save-normal.png'
+          alt=''
+          className='hide-tablet'
+        />
+        <button className='btn show-tablet'>SAVE DRAFT</button>
+
+        <img
+          src='/assets/cards/arrows/next-arrow.png'
+          alt=''
+          className='hide-tablet'
+        />
+        <button className='btn btn-black show-tablet'>NEXT</button>
       </div>
     </div>
   );

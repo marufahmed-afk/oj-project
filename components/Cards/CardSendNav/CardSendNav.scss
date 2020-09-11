@@ -6,6 +6,15 @@
   border-bottom: 1px solid #afafaf;
 
   .send-controls {
+    display: flex;
+
+    .btn {
+      display: none;
+    }
+
+    *:not(:last-child) {
+      margin-right: 0.8rem;
+    }
     img:not(:last-child) {
       margin-right: 0.8rem;
     }

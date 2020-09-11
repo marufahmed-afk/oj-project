@@ -42,3 +42,33 @@
     }
   }
 }
+
+.header-links {
+  display: none;
+  margin: 0rem 1rem;
+
+  p:not(:last-child) {
+    &::after {
+      content: '/';
+      margin: 0rem 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-send {
+    display: flex;
+
+    .card-message {
+      flex: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .card-img {
+    img {
+      width: 900px !important;
+    }
+  }
+}

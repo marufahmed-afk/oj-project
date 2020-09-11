@@ -79,11 +79,18 @@ ul {
   .show-tablet {
     display: flex !important;
   }
+  .hide-tablet {
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 1920px) {
   .btn-black {
     font-size: 1.2rem;
     color: white;
     background: black;
+  }
+
+  .btn {
+    font-size: 1.2rem;
   }
 }

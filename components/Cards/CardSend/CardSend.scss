@@ -19,6 +19,7 @@
         resize: vertical;
         font-size: 1.9rem;
         font-family: Rozha One;
+        background-color: transparent;
 
         font-weight: bold;
         &::placeholder {
@@ -33,6 +34,7 @@
         border: none;
         resize: vertical;
         font-size: 1.3rem;
+        background-color: transparent;
         &::placeholder {
           color: black;
           overflow: visible;

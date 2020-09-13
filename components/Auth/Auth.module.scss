@@ -1,0 +1,79 @@
+.auth-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 3rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input[type='text'] {
+      padding: 1rem 0.2rem;
+      width: 240px;
+      background: #fffefe;
+      border: 1px solid #afafaf;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    input[type='checkbox'] {
+      align-self: flex-start;
+      display: inline-block;
+      width: 15px;
+      vertical-align: top;
+    }
+    .sub-text {
+      align-self: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    span {
+      display: inline-block;
+      width: 200px;
+      word-break: break-all;
+      font-size: 10px;
+    }
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  small {
+    width: 240px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .auth-box {
+    form {
+      input[type='text'] {
+        width: 340px;
+        font-size: 1.2rem;
+      }
+
+      span {
+        display: inline-block;
+        width: 300px;
+        word-break: break-all;
+        font-size: 12px;
+      }
+    }
+    .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    small {
+      width: 300px;
+      font-size: 14px;
+    }
+  }
+}

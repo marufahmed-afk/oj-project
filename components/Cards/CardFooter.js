@@ -1,3 +1,5 @@
+import './CardFooter.module.scss';
+
 function CardFooter() {
   return (
     <div className='card-footer show-desktop'>

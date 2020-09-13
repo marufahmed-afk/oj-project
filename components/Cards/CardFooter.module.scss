@@ -1,0 +1,32 @@
+.card-footer {
+  display: none;
+  justify-content: center;
+  background-color: #f8faff;
+  position: relative;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+
+  .footer-links {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    strong:first-of-type {
+      &::after {
+        content: '';
+        border-right: 1px solid black;
+        margin-left: 0.5rem;
+      }
+      margin-right: 1rem;
+    }
+  }
+
+  .copyright-text {
+    align-self: flex-end;
+    opacity: 40%;
+    p {
+      font-size: 1rem;
+    }
+  }
+}

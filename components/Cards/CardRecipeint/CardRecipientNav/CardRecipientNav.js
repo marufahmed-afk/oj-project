@@ -1,4 +1,4 @@
-import './CardRecipientNav.scss';
+import './CardRecipientNav.module.scss';
 
 const CardRecipientNav = () => {
   return (

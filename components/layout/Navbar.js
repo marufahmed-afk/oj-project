@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import './Navbar.scss';
+import './Navbar.module.scss';
 import Menu from './Menu';
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggleSearch, setToggleSearch] = useState(false);
 
   return (
-    <nav>
+    <nav className='nav'>
       <div className='nav-items'>
         <div
           className='nav-item search-icon'

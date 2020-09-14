@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import './Homepage.scss';
-
-import Footer from '../layout/Footer';
+import './Homepage.module.scss';
 
 function Homepage() {
   return (
@@ -113,7 +111,6 @@ function Homepage() {
           <img src='/assets/images/social/pinterest.png' alt='' />
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

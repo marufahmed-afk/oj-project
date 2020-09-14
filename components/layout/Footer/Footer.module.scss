@@ -1,0 +1,26 @@
+footer {
+  .f1 {
+    background-color: #f8faff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    .list {
+      align-self: center;
+    }
+    ul {
+      margin-bottom: 2rem;
+
+      & > li:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .f2 {
+    text-align-last: center;
+
+    p {
+      opacity: 60%;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.scss';
+import './Navbar.module.scss';
 
 const Menu = ({ setToggleMenu, toggleMenu }) => {
   const [toggleMenu2, setToggleMenu2] = useState(false);

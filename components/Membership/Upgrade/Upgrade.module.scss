@@ -1,0 +1,48 @@
+.upgrade {
+  background-color: #f8faff;
+
+  .upgrade-header {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .upgrade-intro {
+    padding: 2rem 1.5rem;
+
+    h2,
+    h3 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .policy {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .upgrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/assets/images/upgrade-bg.png');
+    background-repeat: no-repeat;
+
+    .policy {
+      width: 500px;
+      line-height: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .upgrade-info {
+    max-width: 400px;
+  }
+
+  .upgrade-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0rem 8rem;
+  }
+}

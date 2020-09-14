@@ -28,7 +28,7 @@ const Register = () => {
         Privacy Policy.
       </small>
       <p>
-        Have an account? <Link href='/login'>Log in</Link>
+        Have an account? <Link href='/auth/login'>Log in</Link>
       </p>
     </div>
   );

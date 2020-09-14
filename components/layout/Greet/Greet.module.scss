@@ -1,0 +1,25 @@
+.greet {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #ecf1fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2,
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+  button {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .greet {
+    padding: 1.5rem 8rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+}

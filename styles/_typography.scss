@@ -8,6 +8,18 @@ h1 {
   font-size: 3rem;
 }
 
+.font-2 {
+  font-family: Rozha One;
+}
+
+.txt-red {
+  color: #f76137;
+}
+
+.txt-blue {
+  color: #2b64be;
+}
+
 .popular,
 .subscribe,
 .story {
@@ -22,8 +34,13 @@ h2 {
   font-weight: normal;
 }
 
+strong {
+  font-size: 0.85rem;
+}
+
 p {
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.85rem;
 }
 
 @media only screen and (min-width: 1024px) {

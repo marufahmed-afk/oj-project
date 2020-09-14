@@ -48,6 +48,17 @@
   small {
     width: 240px;
     font-size: 12px;
+
+    font-weight: 600;
+    span {
+      font-weight: normal;
+    }
+  }
+
+  .forgot-password {
+    align-self: flex-end;
+    font-weight: 500;
+    color: #2b64be;
   }
 }
 
@@ -72,7 +83,7 @@
       right: 0;
     }
     small {
-      width: 300px;
+      width: 340px;
       font-size: 14px;
     }
   }
